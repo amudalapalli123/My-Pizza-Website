@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>menu/pizza</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--css-->
+     <!--bxslider-->
+     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!--google fonts-->
+     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,900" rel="stylesheet">
+
+     <!--favicon-->
+     <link rel="icon" type="img/png" href="images/favicon.png">
+
+ </head>
+ <body>
+    <nav role="navigation" class="navbar navbar-inverse">
+       <div class="container-fluid">
+             <div class="navbar-header">
+                 <a class="navbar-brand" href="#"><img src="C:\Users\pavan\Desktop\pizzalogo.jpg" class="logo"></a>
+                 <button type="button" class="navbar-toggle" data-target="#navbarcollapse" data-toggle="collapse">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                 </button>
+             </div>
+             <div class="dropdown">
+              <p onclick="myFunction()" class="dropbtn">MENU&nbsp;&#x21E9;</p>
+               <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Pizza</a>
+                  <a href="#">Sides</a>
+                  <a href="#">Drinks</a>
+               </div>
+             </div>
+             <div "navbar-collapse collapse" id="navbarcollapse">
+               <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">REGISTER</a></li>
+                <li><a href="#">SPECIALS</a></li>
+              </ul>
+            </div>
+         </div>
+   </nav>
+   <section>
+       <div class="pizza-page">
+           <h1 class="page1">OUR POPULAR PIZZAS</h1>
+       </div>
+       <div class="wrapper1">
+           <form>
+           <div class="cheese">
+           <h4>Cheese Pizza<h4>
+             <img src="C:\Users\pavan\Desktop\pizza-menu1.jpg" alt="exemple"/>
+           <select class="pizza-size" onchange="changeddl(this)">
+            <option>Select A Size</option>
+            <option value="9.99">Large</option>
+            <option value="7.99">Medium</option>
+            <option value="4.99">Small</option>
+           </select>
+           <div class="pizza-price" class="price-style"></div>
+           <select class="cart-price" onchange="changeddl(this)">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+           </select>
+           <h3><button>Add to Cart</button></h3>
+          </div>
+        </form>
+         <form>
+         <div class="pepperoni">
+           <h4>Pepperoni<br>Pizza<h4>
+               <img src="C:\Users\pavan\Desktop\pepperoni1.jpg" alt="exemple"/>
+           <select class="pizza-size1" onchange="changedd2(this)">
+            <option>Select A Size</option>
+            <option value="10.99">Large</option>
+            <option value="8.99">Medium</option>
+            <option value="5.99">Small</option>
+          </select>
+          <div class="pizza-price1" class="price-style"></div>
+          <select class="cart-price1" onchange="changedd2(this)">
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+           <option>5</option>
+         </select>
+         <h3><button>Add to Cart</button></h3>
+        </div>
+      </form>
+      <form>
+      <div class="veggie">
+        <h4>Veggie Pizza<h4>
+            <img src="C:\Users\pavan\Desktop\veggie.jpg" alt="exemple"/>
+        <select class="pizza-size2" onchange="changedd3(this)">
+         <option>Select A Size</option>
+         <option value="10.99">Large</option>
+         <option value="8.99">Medium</option>
+         <option value="5.99">Small</option>
+       </select>
+       <div class="pizza-price2" class="price-style"></div>
+       <select class="cart-price1" onchange="changedd3(this)">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <h3><button>Add to Cart</button></h3>
+     </div>
+   </form>
+   <form id="pizzas
+   ">
+      <div id="info" class="row">
+
+      <h2>What toppings would you like?</h3>
+
+      <p>Below is a list of the pizza toppings...Pick as many as you like. 50 cents each.</p>
+
+      <div id= "veggies" class="col-sm-3">
+
+        <h3>Toppings</h3>
+
+        <input type="checkbox" name="toppings" class="toppings" value="tomatoes"> Tomatoes<br>
+
+        <input type="checkbox" name="toppings" class="toppings" value="pepperoni"> Pepperoni<br>
+
+        <input type="checkbox" name="toppings" class="toppings" value="extraCheese"> Extra Cheese<br>
+
+        <input type="checkbox" name="toppings" class="toppings" value="mushrooms"> Mushrooms<br>
+
+        <input type="checkbox" name="toppings" class="toppings" value="onion"> Onions<br>
+
+        <input type="checkbox" name="toppings" class="toppings" value="olives"> Olives<br>
+
+        <input type="checkbox" name="toppings" class="toppings" value="sausage"> Sausage<br>
+
+        <input type="checkbox" name="toppings" class="toppings" value="chicken"> Chicken<br>
+
+        <input type="checkbox" name="toppings" class="toppings" value="peppers"> Peppers<br>
+
+        <input type="checkbox" name="toppings" class="toppings" value="jalepenos"> Jalepenos<br>
+
+        <input type="checkbox" name="toppings" class="toppings" value="pineapple"> Pineapple<br>
+
+        <input type="checkbox" name="toppings" class="toppings" value="feta"> Feta<br>
+
+        <br>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <h2>What size pizza would you like?</h2>
+
+      <div class="form-group">
+
+        <input type="radio" name="size" class="size" value="small" checked> Small<br>
+
+        <input type="radio" name="size" class="size" value="medium"> Medium<br>
+
+        <input type="radio" name="size" class="size" value="large"> Large<br>
+
+      </div>
+
+      <h2>How many pizzas?</h2>
+
+      <div class="form-group">
+
+        <input type=number name="pizza_quantity" id="pizzaQuantity">
+
+      </div>
+
+      <button type="button" id= "myBtn" class="btn btn-lg btn-primary">Place order</button>
+
+    </div>
+
+  </form>
+
+  <div id="myModal" class="modal fade">
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+            <h3 class="modal-title">Your Order</h3>
+
+        </div>
+
+        <div class="modal-body">
+
+          <h4>Number of Toppings:</h4>
+
+            <p><span class="pizza-toppings"></span></p>
+
+          <h4>Pizza Size:</h4>
+
+            <p><span class="pizza-size"></span></p>
+
+          <h4>Number of Pizzas:</h4>
+
+            <p><span class="pizza-number"></span></p>
+
+          <h4>Total Price:</h4>
+
+            <p><span class="pizza-price"></span></p>
+
+        </div>
+   </form>
+
+     </div>
+
+
+     <script type="text/javascript" src="js\main.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <script src="js\jquery.js"></script>
+ </body>
+</html>
